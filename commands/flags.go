@@ -136,23 +136,22 @@ type FlagsStruct struct {
 }
 
 type ActionFlags struct {
-	docker        string
-	native        bool
-	copy          bool
-	web           string
-	websecure     string
-	sequence      bool
-	timeout       int
-	memory        int
-	logsize       int
-	concurrency   int
-	result        bool
-	kind          string
-	main          string
-	url           bool
-	save          bool
-	saveAs        string
-	delAnnotation []string
+	docker      string
+	native      bool
+	copy        bool
+	web         string
+	websecure   string
+	sequence    bool
+	timeout     int
+	memory      int
+	logsize     int
+	concurrency int
+	result      bool
+	kind        string
+	main        string
+	url         bool
+	save        bool
+	saveAs      string
 }
 
 func IsVerbose() bool {
