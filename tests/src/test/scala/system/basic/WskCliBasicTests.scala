@@ -1013,7 +1013,7 @@ class WskCliBasicTests extends TestHelpers with WskTestHelpers {
       getJSONFromResponse(result.stdout, true).fields("start") should not be JsObject()
       getJSONFromResponse(result.stdout, true).fields("end") shouldBe 0.toJson
       getJSONFromResponse(result.stdout, true).fields("duration") shouldBe 0.toJson
-      getJSONFromResponse(result.stdout, true).fields("annotations").convertTo[JsArray].elements.length shouldBe 0
+      getJSONFromResponse(result.stdout, true).fields("annotations").convertTo[JsArray].elements.length shouldBe 2
     }
   }
 
