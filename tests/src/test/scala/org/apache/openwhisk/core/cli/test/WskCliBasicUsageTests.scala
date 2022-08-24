@@ -2050,19 +2050,6 @@ class WskCliBasicUsageTests extends TestHelpers with WskTestHelpers {
     val entityNameMsg =
       s"An entity name, '$invalidArg', was provided instead of a namespace. Valid namespaces are of the following format: /NAMESPACE."
     val invalidArgs = Seq(
-      (Seq("api", "create"), s"${tooFewArgsMsg} ${apiCreateReqMsg}"),
-      (
-        Seq("api", "create", "/basepath", "/path", "GET", "action", invalidArg),
-        s"${tooManyArgsMsg}${invalidArg}. ${apiCreateReqMsg}"),
-      (Seq("api", "get"), s"${tooFewArgsMsg} ${apiGetReqMsg}"),
-      (Seq("api", "get", "/basepath", invalidArg), s"${tooManyArgsMsg}${invalidArg}. ${apiGetReqMsg}"),
-      (Seq("api", "delete"), s"${tooFewArgsMsg} ${apiDeleteReqMsg}"),
-      (
-        Seq("api", "delete", "/basepath", "/path", "GET", invalidArg),
-        s"${tooManyArgsMsg}${invalidArg}. ${apiDeleteReqMsg}"),
-      (
-        Seq("api", "list", "/basepath", "/path", "GET", invalidArg),
-        s"${tooManyArgsMsg}${invalidArg}. ${apiListReqMsg}"),
       (Seq("action", "create"), s"${tooFewArgsMsg} ${actionNameActionReqMsg}"),
       (Seq("action", "create", "someAction"), s"${tooFewArgsMsg} ${actionNameActionReqMsg}"),
       (Seq("action", "create", "actionName", "artifactName", invalidArg), s"${tooManyArgsMsg}${invalidArg}."),
