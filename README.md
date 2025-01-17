@@ -17,6 +17,15 @@
 #
 -->
 
+# This repository is no longer maintained.
+IBM Cloud Functions reached end of life and this repository is no longer active.
+
+For Apache OpenWhisk visit: [https://github.com/apache/openwhisk](https://github.com/apache/openwhisk).
+
+---
+
+
+
 # OpenWhisk Command-line Interface `wsk`
 
 [![Build Status](https://travis-ci.org/apache/openwhisk-cli.svg?branch=master)](https://travis-ci.org/apache/openwhisk-cli)
